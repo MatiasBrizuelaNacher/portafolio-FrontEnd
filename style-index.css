@@ -29,6 +29,7 @@ header{
     margin-top: -15em;
     width: 100%;
     box-shadow: 1px -9px 69px -16px rgba(0,0,0,0.59);  
+    transition: top  ease-in-out .7s;
 }
 
 .logo-header{
