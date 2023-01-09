@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>web-developer-Matias-Brizuela-Nacher</title >
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!---Importar el archivo de animaciones---> 
         <link rel="stylesheet" type="text/css" href="style-index.css">  <!---Importar el archivo css---> 
         <link rel="stylesheet" type="text/css" href="normalize.css"> <!---Recetear los ajustes de la pagina web---> 
 		<meta charset = "utf-8">
@@ -28,22 +29,24 @@
         </header>
         <main>
             <section class="presentacion">
-                <div>
+                <div id="contenerdor-Presentacion">
                     <div><h1>Hola, mi nombre es</h1></div>
                     <div><h2>Matias Brizuela Nacher</h2></div>
                     <div class="presentacion__p"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates iure quae provident optio quas non eos, itaque sit officia impedit sint temporibus? Cum asperiores ducimus blanditiis suscipit officiis delectus in?</p></div>
                 </div>  
             </section>
-            <section class="about">
+            <section class="about" data-aos="fade-down">
                 <div>
                     <div><h2>About Me</h2></div>
-                    <div class="about-flex">
-                        <div class="about__p"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam est ab dolorem expedita blanditiis obcaecati velit deserunt laborum exercitationem unde. Beatae voluptates suscipit deleniti et quia perferendis veniam, vero laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quidem nemo autem neque in consequuntur, iusto natus illum est libero asperiores quae eveniet expedita vel molestiae perspiciatis, non deleniti quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quisquam non culpa ratione molestias debitis nihil totam tenetur. Facere minima, autem minus pariatur est quibusdam sed sequi quidem adipisci exercitationem.</p></div>
-                        <div class="about__img"><img src="imagenes/foto.jpg"></div>
-                    </div>
+                    <div class="about-grid">
+                        <div><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam est ab dolorem expedita blanditiis obcaecati velit deserunt laborum exercitationem unde. Beatae voluptates suscipit deleniti et quia perferendis veniam, vero laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quidem nemo autem neque in consequuntur, iusto natus illum est libero asperiores quae eveniet expedita vel molestiae perspiciatis, non deleniti quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quisquam non culpa ratione molestias debitis nihil totam tenetur. Facere minima, autem minus pariatur est quibusdam sed sequi quidem adipisci exercitationem.</p></div>
+                        <div class="div-Imagen-padre">
+                            <div class="div-Imagen-hijo" ></div>
+                            <img src="imagenes/foto.jpg"></div>
+                        </div>
                 </div>
             </section>
-            <section class="Work">
+            <section class="Work" data-aos="fade-down">
                 <h2>Work</h2>
                 <div class="work__div">
                     <div class="work__cajas"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quod, magni natus ad ducimus tempora aspernatur expedita. Doloremque deleniti beatae itaque tempore eligendi dolores aut rem, quos velit, eaque sint.</p><i class="fa-brands fa-github"></i></div>
@@ -58,5 +61,14 @@
             </section>
         </main>
         <script src="scroll.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init(
+                {
+                    duration: 1000,
+                    once: true
+                }
+            );
+          </script>
     </body>
 </html>
